@@ -1,0 +1,8 @@
+#+TITLE: orgmode
+#+AUTHOR: svtter
+#+OPTION: toc:2
+
+
+学习emacs有两个主要因素，一个是orgmode，另一个是elisp。
+
+[[https://longlycode.github.io/2016/01/25/Org-mode%25E4%25B8%25AA%25E4%25BA%25BA%25E6%2580%25BB%25E7%25BB%2593/][org-agenda笔记]]
