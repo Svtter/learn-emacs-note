@@ -1,0 +1,44 @@
+#+TITLE: emacs学习笔记
+#+AUTHOR: svtter
+#+OPTION: toc:2
+
+
+学习Emacs似乎通过（文学编程）更好一些。
+
+** Emacs 中 evil 问题的解决
+
+evil 中的 tab 会无法展开org-mode中的标题，通过如下设置可以修正。
+   
+#+BEGIN_SRC
+Try
+
+(setq evil-want-C-i-jump nil)
+
+in your ~/.emacs before
+
+(require 'evil) 
+
+Evil has, in evil-maps.el
+
+(when evil-want-C-i-jump
+  (define-key evil-motion-state-map (kbd "C-i") 'evil-jump-forward))
+#+END_SRC
+
+
+*** reference
+
+[[https://stackoverflow.com/questions/22878668/emacs-org-mode-evil-mode-tab-key-not-working][StackOverflow]]
+
+
+** 超链接问题
+
+在emacs org mode 中，超链接不会全部显示，要么只显示 url，要么只显示 description，非常不方面。这个时候将光标移动到 url附近，
+然后按= C-c C-l =，即可。
+
+** 添加行内代码
+
+使用=~行内代码~=或者~=行内代码=~即可。
+
+** 添加toc
+
+在开头输入= #+OPTION: toc:2 = 即可显示二级目录。
