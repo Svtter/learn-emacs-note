@@ -33,12 +33,20 @@ Evil has, in evil-maps.el
 ** 超链接问题
 
 在emacs org mode 中，超链接不会全部显示，要么只显示 url，要么只显示 description，非常不方面。这个时候将光标移动到 url附近，
-然后按= C-c C-l =，即可。
+然后按* C-c C-l *，即可。
 
 ** 添加行内代码
 
-使用=~行内代码~=或者~=行内代码=~即可。
+1. 使用=行内代码=或者~行内代码~即可。（感觉好像不对）
+2. 使用如下方法：
+
+#+BEGIN_SRC
+While monospaced is good enough for most cases, inline code blocks have the form src_LANG[headers]{your code}. 
+For example, src_xml[:exports code]{<tag>text</tag>}.
+#+END_SRC
+
+比如，src_xml[:exports code]{<tag>text</tag>}。
 
 ** 添加toc
 
-在开头输入= #+OPTION: toc:2 = 即可显示二级目录。
+在开头输入* #+OPTION: toc:2 *即可显示二级目录。
