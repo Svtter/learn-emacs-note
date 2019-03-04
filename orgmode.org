@@ -1,13 +1,43 @@
-#+TITLE: orgmode
-#+AUTHOR: svtter
-#+OPTION: toc:2
+* ORG-MODE :work:learn:
 
+  org-mode is interesting.
+  
+  We could use code to handle it.
+  
+** Quick Tutorial
+   
+   [fn:1]
+   
+*** Org-mode key-binding.
+    
+    - S+TAB expand all chapter
+    - Tab expand current chapter
+    - M+left/right up/down chapter
+      
+    let's test table
 
-学习emacs有两个主要因素，一个是orgmode，另一个是elisp。
+    | a         | b     | c     |
+    |-----------+-------+-------|
+    | test      | tes2  | test3 |
+    | wonderful | table | with  |
+    | org       | mode  | !     |
+    
+    <2019-03-01 五>
 
-[[https://longlycode.github.io/2016/01/25/Org-mode%25E4%25B8%25AA%25E4%25BA%25BA%25E6%2580%25BB%25E7%25BB%2593/][org-agenda笔记]]
+    
+** Tips
+   
+   org-mode is a more powerfull mubu.com
+   
 
+** Tasks
+   
+   + treeroot
+     + branch1
+     + branch2
+      
+       
+** Reference
 
-* checkbox 
-
-[[https://orgmode.org/manual/Checkboxes.html][Use checkbox for todo-things]]
+[fn:1]http://fuzihao.org/blog/2015/02/19/org-mode%E6%95%99%E7%A8%8B
+     
